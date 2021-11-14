@@ -1,5 +1,16 @@
 # glxgears
 
+## building
+
+```
+mkdir build
+cd build
+cmake ..
+make
+```
+
+## running
+
 This repository contains:
 1) A modified version of glxgears with logs per-frame timestamp (glxgears.c)
 2) A script to launch glxgears process at specified intervals (scripts/launcher.py)
