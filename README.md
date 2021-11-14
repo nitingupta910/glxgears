@@ -21,3 +21,19 @@ vblank_mode=0 scripts/launcher.py 30 200 $HOME/data/instances.csv "build/glxgear
 ```
 
 The above command starts a new glxgears instance every 30 seconds, with a total of 200 instances.
+
+# analyzing data
+
+- Install Julia
+- Run Julia and add package Pluto to open the notebook `scripts/report.jl`
+- Start the notebook
+
+Julia repl session:
+
+```julia
+julia> Pkg.add("Pluto")
+julia> using Pluto
+julia> Pluto.run("scripts/report.jl")
+```
+
+In the notebook, change to rootDir variable to point to the directory containing CSV files generated with the launcher command above.
