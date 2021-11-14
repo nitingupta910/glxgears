@@ -26,6 +26,9 @@ begin
 	using Measures
 end
 
+# ╔═╡ ef8faf9c-fe3c-4ae8-a5ad-402a6ab54cbb
+rootDir="/home/user/data" ### FIXME
+
 # ╔═╡ 262e3862-b935-43ed-85cc-9d1a6deb2942
 md"""
 This report shows a potential issue with GPU/Driver scheduler fairness as the number of `glxgears` instances in gradually increased from 1 to 200.
@@ -77,9 +80,6 @@ md"""
 - No dropped frames when mean framtime <= 33.33 ms (for 30 fps target)
 """
 
-
-# ╔═╡ ef8faf9c-fe3c-4ae8-a5ad-402a6ab54cbb
-rootDir="/home/niting/data/nvidia_report"
 
 # ╔═╡ 0ba8eb57-f9d8-4344-91a0-334ce4c41839
 function getFrameTimesForInstance(id, frameTimesAll, upperTimes)::Dict{Int32, Vector{Int32}}
@@ -1279,7 +1279,7 @@ version = "0.9.1+5"
 """
 
 # ╔═╡ Cell order:
-# ╟─ef8faf9c-fe3c-4ae8-a5ad-402a6ab54cbb
+# ╠═ef8faf9c-fe3c-4ae8-a5ad-402a6ab54cbb
 # ╟─262e3862-b935-43ed-85cc-9d1a6deb2942
 # ╟─805a717e-c2a8-40bc-9bba-4722e90d7051
 # ╟─44b747d2-471f-457b-b591-0574ae91dcca
